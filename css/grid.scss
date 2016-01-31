@@ -2,6 +2,34 @@
 @import "./custom-grid-styles.scss"; 
 
 $columns: "one" "two" "three" "four" "five" "six" "seven" "eight" "nine" "ten" "eleven" "twelve";
+$base-width-keys: (
+  base-width-one,
+  base-width-two,
+  base-width-three,
+  base-width-four,
+  base-width-five,
+  base-width-six,
+  base-width-seven,
+  base-width-eight,
+  base-width-nine,
+  base-width-ten,
+  base-width-eleven,
+  base-width-twelve
+);
+$base-width-vals: (
+  ((100% / 12) * 1) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2),
+  ((100% / 12) * 2) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2),
+  ((100% / 12) * 3) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2),
+  ((100% / 12) * 4) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2),
+  ((100% / 12) * 5) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2),
+  ((100% / 12) * 6) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2),
+  ((100% / 12) * 7) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2),
+  ((100% / 12) * 8) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2),
+  ((100% / 12) * 9) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2),
+  ((100% / 12) * 10) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2),
+  ((100% / 12) * 11) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2),
+  ((100% / 12) * 12) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2)
+);
 
 .row{
   width: $row-width;
@@ -35,59 +63,26 @@ $columns: "one" "two" "three" "four" "five" "six" "seven" "eight" "nine" "ten" "
     }           
   }
 
-  @each $column in $columns {
-    $i: index($columns, $column);
-    &.row-of-#{$column}{
-      .one{
-        width: calc(((100% / 12) * 1) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2) + (#{$margin-amount-x} / #{$i}));
+  @each $key in $base-width-keys {
+    $width-index: index($base-width-keys, $key);
+    &.row-of-#{nth($columns, $width-index)} {
+      @each $column in $columns {
+        div.column, div.columns{
+          $col-index: index($columns, $column);
+          &.#{$column}{
+            width: calc(#{nth($base-width-vals, $col-index)} + #{$margin-amount-x} / #{$width-index});
+          }                      
+        }
       }
-      .two{
-        width: calc(((100% / 12) * 2) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2) + (#{$margin-amount-x} / #{$i}));
-      }
-      .three{
-        width: calc(((100% / 12) * 3) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2) + (#{$margin-amount-x} / #{$i}));
-      }
-      .four{
-        width: calc(((100% / 12) * 4) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2) + (#{$margin-amount-x} / #{$i}));
-      }
-      .five{
-        width: calc(((100% / 12) * 5) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2) + (#{$margin-amount-x} / #{$i}));
-      }    
-      .six{
-        width: calc(((100% / 12) * 6) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2) + (#{$margin-amount-x} / #{$i}));
-      }    
-      .seven{
-        width: calc(((100% / 12) * 7) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2) + (#{$margin-amount-x} / #{$i}));
-      }
-      .eight{
-        width: calc(((100% / 12) * 8) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2) + (#{$margin-amount-x} / #{$i}));
-      }
-      .nine{
-        width: calc(((100% / 12) * 9) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2) + (#{$margin-amount-x} / #{$i}));
-      }
-      .ten{
-        width: calc(((100% / 12) * 10) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2) + (#{$margin-amount-x} / #{$i}));
-      }  
-      .eleven{
-        width: calc(((100% / 12) * 11) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2) + (#{$margin-amount-x} / #{$i}));
-      }
-      .twelve{
-        width: calc(((100% / 12) * 12) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2) + (#{$margin-amount-x} / #{$i}));
-      }    
     }
   }
 
 }
 
-$width-four: ((100% / 12) * 4) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2);
+/* new way */
 
-.test-of-three{
-  $test-add: #{$margin-amount-x} / 3;
-  //$base-width
-  div{
-    border: 1px solid;
-    width: calc(#{$width-four} + #{$test-add});
-  }
-}
+
+
+
 
 
