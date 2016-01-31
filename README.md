@@ -23,3 +23,4 @@ Mark up is as easy as:
 Now you have a grid. Here's a sample:
 
 ![Sample grid image](http://imgur.com/S90owRJ)
+![Sample grid image](https://imgur.com/S90owRJ)
