@@ -1,17 +1,16 @@
 @import "./media-breakpoints.scss";
 
-$margin-width: 15px;
 $padding-amount-x: 0px;
-$padding-amount-y: 20px;
-$margin-amount-x: 8px;
-$margin-amount-y: 8px;
+$padding-amount-y: 5px;
+$margin-amount-x: 5px;
+$margin-amount-y: 5px;
 $row-width: 80%;
+$border-width-x: 0px;
+$columns: "one" "two" "three" "four" "five" "six" "seven" "eight" "nine" "ten" "eleven" "twelve";
 
-$border-width-x: 1px;
-//$margin-width-ten
-
+/* dev */
 *{
-  font: 10pt menlo, monospace;
+  font: 10px menlo, monospace;
   margin: 0px;
   padding: 0px;
 }
@@ -19,6 +18,15 @@ body{
   margin: 50px auto;
   padding: 0px;
 }
+
+/*.row{
+ &:after{
+    clear: both;
+    content: "";
+    display: block;
+  }
+}*/
+/* end dev */ 
 
 .row{
   width: $row-width;
@@ -33,10 +41,7 @@ body{
     background: lightgray;
     margin: 0;
     float: left;
-    padding-top: $padding-amount-y;
-    padding-bottom: $padding-amount-y;
-    padding-left: $padding-amount-x;
-    padding-right: $padding-amount-x;
+    padding: $padding-amount-y $padding-amount-x;
     margin-left: $margin-amount-x;
     margin-bottom: $margin-amount-y;
   }
@@ -48,7 +53,7 @@ body{
       margin-right: $margin-amount-x;
     }
     &:first-child{
-      margin-left: $margin-amount-x/2;
+      margin-left: 0;
     }
     @include breakpoint(sml){
         display: inline;
@@ -58,55 +63,51 @@ body{
       &:first-child{
         margin-left: 0;
       }        
-    } 
-    &.row-with-one{
+    }           
+  }
 
-    }
-    &.row-width-two{
-
-    }
-    &.one{
-      width: calc(((100% / 12) * 1) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2));
-    }
-    &.two{
-      width: calc(((100% / 12) * 2) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2));
-    }
-    &.three{
-      width: calc(((100% / 12) * 3) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2));
-    }
-    &.four{
-      width: calc(((100% / 12) * 4) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2));
-    }
-    &.five{
-      width: calc(((100% / 12) * 5) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2));
-    }    
-    &.six{
-      width: calc(((100% / 12) * 6) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2));
-    }    
-    &.seven{
-      width: calc(((100% / 12) * 7) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2));
-    }
-    &.eight{
-      width: calc(((100% / 12) * 8) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2));
-    }
-    &.nine{
-      width: calc(((100% / 12) * 9) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2));
-    }
-    &.ten{
-      width: calc(((100% / 12) * 10) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2));
-    }  
-    &.eleven{
-      width: calc(((100% / 12) * 11) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2));
-    }
-    &.twelve{
-      width: calc(((100% / 12) * 12) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2));
+  @each $column in $columns {
+    $i: index($columns, $column);
+    &.row-of-#{$column}{
+      .one{
+        width: calc(((100% / 12) * 1) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2) + (#{$margin-amount-x} / #{$i}));
+      }
+      .two{
+        width: calc(((100% / 12) * 2) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2) + (#{$margin-amount-x} / #{$i}));
+      }
+      .three{
+        width: calc(((100% / 12) * 3) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2) + (#{$margin-amount-x} / #{$i}));
+      }
+      .four{
+        width: calc(((100% / 12) * 4) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2) + (#{$margin-amount-x} / #{$i}));
+      }
+      .five{
+        width: calc(((100% / 12) * 5) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2) + (#{$margin-amount-x} / #{$i}));
+      }    
+      .six{
+        width: calc(((100% / 12) * 6) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2) + (#{$margin-amount-x} / #{$i}));
+      }    
+      .seven{
+        width: calc(((100% / 12) * 7) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2) + (#{$margin-amount-x} / #{$i}));
+      }
+      .eight{
+        width: calc(((100% / 12) * 8) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2) + (#{$margin-amount-x} / #{$i}));
+      }
+      .nine{
+        width: calc(((100% / 12) * 9) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2) + (#{$margin-amount-x} / #{$i}));
+      }
+      .ten{
+        width: calc(((100% / 12) * 10) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2) + (#{$margin-amount-x} / #{$i}));
+      }  
+      .eleven{
+        width: calc(((100% / 12) * 11) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2) + (#{$margin-amount-x} / #{$i}));
+      }
+      .twelve{
+        width: calc(((100% / 12) * 12) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2) + (#{$margin-amount-x} / #{$i}));
+      }    
     }
   }
+
 }
-.row{
- &:after{
-    clear: both;
-    content: "";
-    display: block;
-  }
-}
+
+
