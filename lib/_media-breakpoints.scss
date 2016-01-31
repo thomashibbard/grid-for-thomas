@@ -1,0 +1,17 @@
+@mixin breakpoint($point) {
+  @if $point == hge {
+    @media (max-width: 1800px) { @content; }
+  }
+  @else if $point == lrg {
+    @media (max-width: 1600px) { @content; }
+  }
+  @else if $point == med {
+    @media (max-width: 1250px) { @content; }
+  }
+  @else if $point == sml {
+    @media (max-width: 600px)  { @content; }
+  }
+  @else if $point == mob {
+    @media (max-width: 320px)  { @content; } /*iPhone 5 (and smaller) by the best of my reckoning*/
+  }
+}

@@ -1,7 +1,4 @@
-
-$big: 600px;
-$med: 800px;
-$sml: 600px;
+@import "./media-breakpoints.scss";
 
 $margin-width: 15px;
 $padding-amount-x: 0px;
@@ -12,7 +9,7 @@ $row-width: 80%;//calc(90% - #{$margin-amount-x});
 $padding-amount-x-two: $padding-amount-x * 2;
 $padding-amount-x-ten: $padding-amount-x * 10;
 
-$border-width-x: 0px;
+$border-width-x: 1px;
 //$margin-width-ten
 
 *{
@@ -53,8 +50,17 @@ body{
       margin-right: $margin-amount-x;
     }
     &:first-child{
-      margin-left: $margin-amount-x/2 !important;
+      margin-left: $margin-amount-x/2;
     }
+    @include breakpoint(sml){
+        display: inline;
+        width: 100% !important;
+        margin-left: 0;
+        margin-right: 0;
+      &:first-child{
+        margin-left: 0;
+      }        
+    } 
     &.one{
       width: calc(((100% / 12) * 1) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2));
     }
