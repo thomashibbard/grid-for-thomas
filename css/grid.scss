@@ -1,33 +1,7 @@
 @import "./media-breakpoints.scss";
+@import "./custom-grid-styles.scss"; 
 
-$padding-amount-x: 0px;
-$padding-amount-y: 8px;
-$margin-amount-x: 5px;
-$margin-amount-y: 5px;
-$border-width-x: 1px;
-
-$row-width: 80%;
 $columns: "one" "two" "three" "four" "five" "six" "seven" "eight" "nine" "ten" "eleven" "twelve";
-
-/* dev */
-*{
-  font: 10px menlo, monospace;
-  margin: 0px;
-  padding: 0px;
-}
-body{
-  margin: 50px auto;
-  padding: 0px;
-}
-
-/*.row{
- &:after{
-    clear: both;
-    content: "";
-    display: block;
-  }
-}*/
-/* end dev */ 
 
 .row{
   width: $row-width;
@@ -36,19 +10,13 @@ body{
   .column,
   .columns{
     text-align: center;
-    border-radius: 3px;
-    border: $border-width-x solid #333333;
-    display: inline-block;
-    background: lightgray;
-    margin: 0;
-    float: left;
     padding: $padding-amount-y $padding-amount-x;
     margin-left: $margin-amount-x;
     margin-bottom: $margin-amount-y;
   }
   .column,
   .columns{
-    .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve{
+    .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve{ 
       width: 100%;
       margin-left: $margin-amount-x;
       margin-right: $margin-amount-x;
@@ -109,6 +77,17 @@ body{
     }
   }
 
+}
+
+$width-four: ((100% / 12) * 4) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2);
+
+.test-of-three{
+  $test-add: #{$margin-amount-x} / 3;
+  //$base-width
+  div{
+    border: 1px solid;
+    width: calc(#{$width-four} + #{$test-add});
+  }
 }
 
 
