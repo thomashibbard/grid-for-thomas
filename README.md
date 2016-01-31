@@ -24,3 +24,5 @@ Now you have a grid. Here's a sample:
 
 ![Sample grid image](http://imgur.com/S90owRJ)
 ![Sample grid image](https://imgur.com/S90owRJ)
+
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
