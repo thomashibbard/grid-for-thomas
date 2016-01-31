@@ -59,6 +59,12 @@ body{
         margin-left: 0;
       }        
     } 
+    &.row-with-one{
+
+    }
+    &.row-width-two{
+
+    }
     &.one{
       width: calc(((100% / 12) * 1) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2));
     }
