@@ -34,32 +34,38 @@ body {
   margin-left: 0 !important;
 }
 .row .columns.one {
-  width: calc(100% / 2 - (15px * 2) - 15px);
+  width: calc(((100% / 12) * 1) - 15px * 2 - 15px);
 }
 .row .columns.two {
-  width: calc((100% / 12 - (15px * 2)) * 2 - 15px);
+  width: calc(((100% / 12) * 2) - 15px * 2 - 15px);
 }
 .row .columns.three {
-  width: calc(100% / 12 - (15px * 2) - 15px);
+  width: calc(((100% / 12) * 3) - 15px * 2 - 15px);
 }
 .row .columns.four {
-  width: calc((100% / 3) - (15px * 2) - (15px));
+  width: calc(((100% / 12) * 4) - 15px * 2 - 15px);
 }
 .row .columns.five {
-  width: calc(100% / 2 - (15px * 2) - 15px);
+  width: calc(((100% / 12) * 5) - 15px * 2 - 15px);
 }
 .row .columns.six {
-  width: calc(100% / 2 - (15px * 2) - 15px);
+  width: calc(((100% / 12) * 6) - 15px * 2 - 15px);
 }
 .row .columns.seven {
-  width: calc(100% / 2 - (15px * 2) - 15px);
+  width: calc(((100% / 12) * 7) - 15px * 2 - 15px);
 }
 .row .columns.eight {
-  width: calc(100% / 2 - (15px * 2) - 15px);
+  width: calc(((100% / 12) * 8) - 15px * 2 - 15px);
 }
 .row .columns.nine {
-  width: calc(100% / 2 - (15px * 2) - 15px);
+  width: calc(((100% / 12) * 9) - 15px * 2 - 15px);
+}
+.row .columns.ten {
+  width: calc(((100% / 12) * 10) - 15px * 2 - 15px);
 }
 .row .columns.eleven {
-  width: calc(100% / 2 - (15px * 2) - 15px);
+  width: calc(((100% / 12) * 11) - 15px * 2 - 15px);
+}
+.row .columns.twelve {
+  width: calc(((100% / 12) * 12) - 15px * 2 - 15px);
 }

@@ -49,40 +49,40 @@ body{
       margin-left: 0 !important;
     }
     &.one{
-      width: calc(100% / 2 - (#{$padding-amount-x} * 2) - #{$margin-amount-x});
+      width: calc(((100% / 12) * 1) - #{$padding-amount-x} * 2 - #{$margin-amount-x});
     }
     &.two{
-      width: calc((100% / 12 - (#{$padding-amount-x} * 2)) * 2 - #{$margin-amount-x});
+      width: calc(((100% / 12) * 2) - #{$padding-amount-x} * 2 - #{$margin-amount-x});
     }
     &.three{
-      width: calc(100% / 12 - (#{$padding-amount-x} * 2) - #{$margin-amount-x});
+      width: calc(((100% / 12) * 3) - #{$padding-amount-x} * 2 - #{$margin-amount-x});
     }
     &.four{
-      width: calc((100% / 3) - (#{$padding-amount-x} * 2) - (#{$margin-amount-x}));
+      width: calc(((100% / 12) * 4) - #{$padding-amount-x} * 2 - #{$margin-amount-x});
     }
     &.five{
-      width: calc(100% / 2 - (#{$padding-amount-x} * 2) - #{$margin-amount-x});
-    }
+      width: calc(((100% / 12) * 5) - #{$padding-amount-x} * 2 - #{$margin-amount-x});
+    }    
     &.six{
-      width: calc(100% / 2 - (#{$padding-amount-x} * 2) - #{$margin-amount-x});
+      width: calc(((100% / 12) * 6) - #{$padding-amount-x} * 2 - #{$margin-amount-x});
     }    
     &.seven{
-      width: calc(100% / 2 - (#{$padding-amount-x} * 2) - #{$margin-amount-x});
+      width: calc(((100% / 12) * 7) - #{$padding-amount-x} * 2 - #{$margin-amount-x});
     }
     &.eight{
-      width: calc(100% / 2 - (#{$padding-amount-x} * 2) - #{$margin-amount-x});
+      width: calc(((100% / 12) * 8) - #{$padding-amount-x} * 2 - #{$margin-amount-x});
     }
     &.nine{
-      width: calc(100% / 2 - (#{$padding-amount-x} * 2) - #{$margin-amount-x});
+      width: calc(((100% / 12) * 9) - #{$padding-amount-x} * 2 - #{$margin-amount-x});
     }
     &.ten{
-      //width: calc(100% / 12 - ((#{$padding-amount-x} * 20) - (#{$margin-amount-x}))  * 10);
+      width: calc(((100% / 12) * 10) - #{$padding-amount-x} * 2 - #{$margin-amount-x});
     }  
     &.eleven{
-      width: calc(100% / 2 - (#{$padding-amount-x} * 2) - #{$margin-amount-x});
+      width: calc(((100% / 12) * 11) - #{$padding-amount-x} * 2 - #{$margin-amount-x});
     }
     &.twelve{
-      //width: 100%
+      width: calc(((100% / 12) * 12) - #{$padding-amount-x} * 2 - #{$margin-amount-x});
     }
   }
 }
