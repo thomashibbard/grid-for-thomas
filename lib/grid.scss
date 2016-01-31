@@ -4,14 +4,15 @@ $med: 800px;
 $sml: 600px;
 
 $margin-width: 15px;
-$padding-amount-x: 35px;
+$padding-amount-x: 0px;
 $padding-amount-y: 20px;
 $margin-amount-x: 8px;
-$row-width: calc(90% - #{$margin-amount-x});
+$margin-amount-y: 8px;
+$row-width: 80%;//calc(90% - #{$margin-amount-x});
 $padding-amount-x-two: $padding-amount-x * 2;
 $padding-amount-x-ten: $padding-amount-x * 10;
 
-$border-width-x: 1px;
+$border-width-x: 0px;
 //$margin-width-ten
 
 *{
@@ -20,35 +21,36 @@ $border-width-x: 1px;
   padding: 0px;
 }
 body{
-  margin: 0px;
+  margin: 50px auto;
   padding: 0px;
 }
 
 .row{
   width: $row-width;
-  margin: 5px auto;
+  margin: 0 auto;
   clear: both;
   .column,
   .columns{
+    text-align: center;
+    border-radius: 3px;
     border: $border-width-x solid red;
-    //margin: 0 auto;
-    //padding: 5px;
     display: inline-block;
     background: lightgray;
     margin: 0;
     float: left;
-    margin-bottom: 0.4rem;
     padding-top: $padding-amount-y;
     padding-bottom: $padding-amount-y;
     padding-left: $padding-amount-x;
     padding-right: $padding-amount-x;
     margin-left: $margin-amount-x;
+    margin-bottom: $margin-amount-y;
   }
   .column,
   .columns{
     .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve{
       width: 100%;
-
+      margin-left: $margin-amount-x;
+      margin-right: $margin-amount-x;
     }
     &:first-child{
       margin-left: $margin-amount-x/2 !important;
