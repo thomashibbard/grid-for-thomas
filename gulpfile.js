@@ -4,12 +4,12 @@ var gulp = require('gulp')
   , rename = require('gulp-rename');
 
 gulp.task('sass', function() {
-return sass('./lib/**/*.scss', { style: 'expanded' })
-  .pipe(gulp.dest('./lib/'));
+return sass('./css/**/*.scss', { style: 'expanded' })
+  .pipe(gulp.dest('./css/'));
 });
 
 gulp.task('watch-sass', function() {
-  gulp.watch('./lib/**/*.scss', ['sass']);
+  gulp.watch('./css/**/*.scss', ['sass']);
 })
 
 gulp.task('minify-css', function () {
