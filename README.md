@@ -1,4 +1,4 @@
-#12 Column Grid for Thomas
+#12 Column Grid for Thomas (Desktop & Mobile)
 
 ###About
 There are a lot of grid systems out there. Sometimes though, customization is tough; there are just too many style rules to easily overwrite with confidence. Even my favorite, [Skeleton](http://getskeleton.com/), comes with a lot of stuff I don't need. This is the simplest possible grid system that I could come up with. 
