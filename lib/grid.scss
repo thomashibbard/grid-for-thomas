@@ -1,0 +1,88 @@
+
+$big: 600px;
+$med: 800px;
+$sml: 600px;
+
+$margin-width: 15px;
+$padding-amount-x: 15px;
+$padding-amount-y: 19px;
+$margin-amount-x: 15px;
+
+$padding-amount-x-two: $padding-amount-x * 2;
+$padding-amount-x-ten: $padding-amount-x * 10;
+//$margin-width-ten
+
+*{
+  font: 10pt menlo, monospace;
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+.row{
+  width: 80%;
+  margin: 0 auto;
+  clear: both;
+  .column,
+  .columns{
+    //margin: 0 auto;
+    //padding: 5px;
+    display: inline-block;
+    background: lightgray;
+    margin: 0;
+    float: left;
+    margin-bottom: 0.4rem;
+    padding-top: $padding-amount-y;
+    padding-bottom: $padding-amount-y;
+    padding-left: $padding-amount-x;
+    padding-right: $padding-amount-x;
+    margin-left: $margin-amount-x;
+  }
+  .columns{
+    .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve{
+      width: 100%;
+    }
+    &:first-child{
+      margin-left: 0 !important;
+    }
+    &.one{
+      width: calc(100% / 2 - (#{$padding-amount-x} * 2) - #{$margin-amount-x});
+    }
+    &.two{
+      width: calc((100% / 12 - (#{$padding-amount-x} * 2)) * 2 - #{$margin-amount-x});
+    }
+    &.three{
+      width: calc(100% / 12 - (#{$padding-amount-x} * 2) - #{$margin-amount-x});
+    }
+    &.four{
+      width: calc((100% / 3) - (#{$padding-amount-x} * 2) - (#{$margin-amount-x}));
+    }
+    &.five{
+      width: calc(100% / 2 - (#{$padding-amount-x} * 2) - #{$margin-amount-x});
+    }
+    &.six{
+      width: calc(100% / 2 - (#{$padding-amount-x} * 2) - #{$margin-amount-x});
+    }    
+    &.seven{
+      width: calc(100% / 2 - (#{$padding-amount-x} * 2) - #{$margin-amount-x});
+    }
+    &.eight{
+      width: calc(100% / 2 - (#{$padding-amount-x} * 2) - #{$margin-amount-x});
+    }
+    &.nine{
+      width: calc(100% / 2 - (#{$padding-amount-x} * 2) - #{$margin-amount-x});
+    }
+    &.ten{
+      //width: calc(100% / 12 - ((#{$padding-amount-x} * 20) - (#{$margin-amount-x}))  * 10);
+    }  
+    &.eleven{
+      width: calc(100% / 2 - (#{$padding-amount-x} * 2) - #{$margin-amount-x});
+    }
+    &.twelve{
+      //width: 100%
+    }
+  }
+}

@@ -1,0 +1,65 @@
+* {
+  font: 10pt menlo, monospace;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.row {
+  width: 80%;
+  margin: 0 auto;
+  clear: both;
+}
+.row .column,
+.row .columns {
+  display: inline-block;
+  background: lightgray;
+  margin: 0;
+  float: left;
+  margin-bottom: 0.4rem;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 15px;
+}
+.row .columns .one, .row .columns .two, .row .columns .three, .row .columns .four, .row .columns .five, .row .columns .six, .row .columns .seven, .row .columns .eight, .row .columns .nine, .row .columns .ten, .row .columns .eleven, .row .columns .twelve {
+  width: 100%;
+}
+.row .columns:first-child {
+  margin-left: 0 !important;
+}
+.row .columns.one {
+  width: calc(100% / 2 - (15px * 2) - 15px);
+}
+.row .columns.two {
+  width: calc((100% / 12 - (15px * 2)) * 2 - 15px);
+}
+.row .columns.three {
+  width: calc(100% / 12 - (15px * 2) - 15px);
+}
+.row .columns.four {
+  width: calc((100% / 3) - (15px * 2) - (15px));
+}
+.row .columns.five {
+  width: calc(100% / 2 - (15px * 2) - 15px);
+}
+.row .columns.six {
+  width: calc(100% / 2 - (15px * 2) - 15px);
+}
+.row .columns.seven {
+  width: calc(100% / 2 - (15px * 2) - 15px);
+}
+.row .columns.eight {
+  width: calc(100% / 2 - (15px * 2) - 15px);
+}
+.row .columns.nine {
+  width: calc(100% / 2 - (15px * 2) - 15px);
+}
+.row .columns.eleven {
+  width: calc(100% / 2 - (15px * 2) - 15px);
+}
