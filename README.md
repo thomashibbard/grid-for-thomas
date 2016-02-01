@@ -11,7 +11,7 @@ There are a lot of grid systems out there. Sometimes though, customization is to
 ####Edit and Mark Up
 Adjust the padding and margin in the `grid.scss` file using `$padding-amount-x/y` and `$margin-amount-x/y`. 
 
-Mark it up like this:
+####Mark it Up
 
 ```
   <div class="row">
