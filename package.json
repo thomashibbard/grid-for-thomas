@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thomashibbard/grid.git"
+    "url": "git+https://github.com/thomashibbard/grid-for-thomas.git.git"
   },
   "author": "Thomas Hibbard",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/thomashibbard/grid/issues"
+    "url": "://github.com/thomashibbard/grid-for-thomas.git/issues"
   },
-  "homepage": "https://github.com/thomashibbard/grid#readme",
+  "homepage": "https://github.com/thomashibbard/grid-for-thomas.git#readme",
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-cssmin": "^0.1.7",

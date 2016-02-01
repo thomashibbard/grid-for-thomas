@@ -1,0 +1,22 @@
+{
+  "name": "grid-for-thomas",
+  "version": "0.0.1",
+  "homepage": "https://github.com/thomashibbard/grid-for-thomas.git",
+  "authors": [
+    "Thomas Hibbard <loren.hibbard@gmail.com>"
+  ],
+  "description": "\"12 Column Grid for Thomas (Desktop & Mobile)\"",
+  "main": "./css/grid.scss",
+  "keywords": [
+    "grid",
+    "sytem"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
