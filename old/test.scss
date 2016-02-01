@@ -1,0 +1,122 @@
+@import "./media-breakpoints.scss";
+@import "./custom-grid-styles.scss";
+
+$row-width: 80%;
+
+
+//$margin-width-ten
+
+*{
+  font: 10pt menlo, monospace;
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  margin: 50px auto;
+  padding: 0px;
+}
+
+.row{
+  width: $row-width;
+  margin: 0 auto;
+  clear: both;
+  .column,
+  .columns{
+    text-align: center;
+    border-radius: 3px;
+    border: $border-width-x solid #333333;
+    display: inline-block;
+    background: lightgray;
+    margin: 0;
+    float: left;
+    padding-top: $padding-amount-y;
+    padding-bottom: $padding-amount-y;
+    padding-left: $padding-amount-x;
+    margin-left: $gutter;
+    margin-bottom: $margin-amount-y; 
+  }
+  .column,
+  .columns{
+    .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve{
+      width: 100%;
+      margin-left: $gutter;
+      margin-right: $gutter; 
+    }
+    &:first-child{
+      margin-left: $gutter/2;
+    }
+    @include breakpoint(sml){
+        display: inline;
+        width: 100% !important;
+        margin-left: 0;
+        margin-right: 0;
+      &:first-child{ 
+        margin-left: 0;
+      }        
+    } 
+    &.one{
+      width: calc(((100% / 12) * 1) - #{$padding-amount-x} * 2 - #{$gutter} - (#{$border-width-x} * 2));
+    }
+    &.two{
+      width: calc(((100% / 12) * 2) - #{$padding-amount-x} * 2 - #{$gutter} - (#{$border-width-x} * 2));
+    }
+    &.three{
+      width: calc(((100% / 12) * 3) - #{$padding-amount-x} * 2 - #{$gutter} - (#{$border-width-x} * 2));
+    }
+    &.four{
+      width: calc(((100% / 12) * 4) - #{$padding-amount-x} * 2 - #{$gutter} - (#{$border-width-x} * 2));
+    }
+    &.five{
+      width: calc(((100% / 12) * 5) - #{$padding-amount-x} * 2 - #{$gutter} - (#{$border-width-x} * 2));
+    }    
+    &.six{
+      width: calc(((100% / 12) * 6) - #{$padding-amount-x} * 2 - #{$gutter} - (#{$border-width-x} * 2));
+    }    
+    &.seven{
+      width: calc(((100% / 12) * 7) - #{$padding-amount-x} * 2 - #{$gutter} - (#{$border-width-x} * 2));
+    }
+    &.eight{
+      width: calc(((100% / 12) * 8) - #{$padding-amount-x} * 2 - #{$gutter} - (#{$border-width-x} * 2));
+    }
+    &.nine{
+      width: calc(((100% / 12) * 9) - #{$padding-amount-x} * 2 - #{$gutter} - (#{$border-width-x} * 2));
+    }
+    &.ten{
+      width: calc(((100% / 12) * 10) - #{$padding-amount-x} * 2 - #{$gutter} - (#{$border-width-x} * 2));
+    }  
+    &.eleven{
+      width: calc(((100% / 12) * 11) - #{$padding-amount-x} * 2 - #{$gutter} - (#{$border-width-x} * 2));
+    }
+    &.twelve{
+      width: calc(((100% / 12) * 12) - #{$padding-amount-x} * 2 - #{$gutter} - (#{$border-width-x} * 2));
+    }
+  }
+}
+.row{
+ &:after{
+    clear: both;
+    content: "";
+    display: block;
+  }
+}
+
+$base-width-one: 50;
+
+
+.row-of-twelve{
+  div.coloumn{
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
