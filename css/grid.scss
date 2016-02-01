@@ -1,13 +1,9 @@
 @import "./media-breakpoints.scss";
+@import "./custom-grid-styles.scss";
 
-$margin-width: 15px;
-$padding-amount-x: 0px;
-$padding-amount-y: 20px;
-$margin-amount-x: 28px;
-$margin-amount-y: 8px;
 $row-width: 80%;
 
-$border-width-x: 1px;
+
 //$margin-width-ten
 
 *{
@@ -36,18 +32,18 @@ body{
     padding-top: $padding-amount-y;
     padding-bottom: $padding-amount-y;
     padding-left: $padding-amount-x;
-    margin-left: $margin-amount-x;
+    margin-left: $gutter;
     margin-bottom: $margin-amount-y; 
   }
   .column,
   .columns{
     .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve{
       width: 100%;
-      margin-left: $margin-amount-x;
-      margin-right: $margin-amount-x; 
+      margin-left: $gutter;
+      margin-right: $gutter; 
     }
     &:first-child{
-      margin-left: $margin-amount-x/2;
+      margin-left: $gutter/2;
     }
     @include breakpoint(sml){
         display: inline;
@@ -59,40 +55,40 @@ body{
       }        
     } 
     &.one{
-      width: calc(((100% / 12) * 1) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2));
+      width: calc(((100% / 12) * 1) - #{$padding-amount-x} * 2 - #{$gutter} - (#{$border-width-x} * 2));
     }
     &.two{
-      width: calc(((100% / 12) * 2) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2));
+      width: calc(((100% / 12) * 2) - #{$padding-amount-x} * 2 - #{$gutter} - (#{$border-width-x} * 2));
     }
     &.three{
-      width: calc(((100% / 12) * 3) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2));
+      width: calc(((100% / 12) * 3) - #{$padding-amount-x} * 2 - #{$gutter} - (#{$border-width-x} * 2));
     }
     &.four{
-      width: calc(((100% / 12) * 4) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2));
+      width: calc(((100% / 12) * 4) - #{$padding-amount-x} * 2 - #{$gutter} - (#{$border-width-x} * 2));
     }
     &.five{
-      width: calc(((100% / 12) * 5) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2));
+      width: calc(((100% / 12) * 5) - #{$padding-amount-x} * 2 - #{$gutter} - (#{$border-width-x} * 2));
     }    
     &.six{
-      width: calc(((100% / 12) * 6) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2));
+      width: calc(((100% / 12) * 6) - #{$padding-amount-x} * 2 - #{$gutter} - (#{$border-width-x} * 2));
     }    
     &.seven{
-      width: calc(((100% / 12) * 7) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2));
+      width: calc(((100% / 12) * 7) - #{$padding-amount-x} * 2 - #{$gutter} - (#{$border-width-x} * 2));
     }
     &.eight{
-      width: calc(((100% / 12) * 8) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2));
+      width: calc(((100% / 12) * 8) - #{$padding-amount-x} * 2 - #{$gutter} - (#{$border-width-x} * 2));
     }
     &.nine{
-      width: calc(((100% / 12) * 9) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2));
+      width: calc(((100% / 12) * 9) - #{$padding-amount-x} * 2 - #{$gutter} - (#{$border-width-x} * 2));
     }
     &.ten{
-      width: calc(((100% / 12) * 10) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2));
+      width: calc(((100% / 12) * 10) - #{$padding-amount-x} * 2 - #{$gutter} - (#{$border-width-x} * 2));
     }  
     &.eleven{
-      width: calc(((100% / 12) * 11) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2));
+      width: calc(((100% / 12) * 11) - #{$padding-amount-x} * 2 - #{$gutter} - (#{$border-width-x} * 2));
     }
     &.twelve{
-      width: calc(((100% / 12) * 12) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2));
+      width: calc(((100% / 12) * 12) - #{$padding-amount-x} * 2 - #{$gutter} - (#{$border-width-x} * 2));
     }
   }
 }

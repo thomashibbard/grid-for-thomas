@@ -1,0 +1,31 @@
+/* dev */ 
+*{
+  font: 10px menlo;
+  margin: 0px; 
+  padding: 0px;
+}
+body{
+  margin: 70px auto;
+  padding: 0px;
+} 
+/* end dev */
+
+$padding-amount-x: 0px;
+$padding-amount-y: 8px;
+$gutter: 5px;
+$margin-amount-y: 5px;
+$border-width-x: 1px;
+$row-width: 80%;
+
+.row{
+	.column, 
+	.columns{
+		border-radius: 3px;
+    border: $border-width-x solid #333333;
+		display: inline-block;
+		margin: 0;
+		float: left;		
+    background: lightgray;
+ 
+	}
+}

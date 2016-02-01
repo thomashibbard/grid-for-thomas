@@ -1,3 +1,26 @@
+/* dev */
+* {
+  font: 10px menlo;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin: 70px auto;
+  padding: 0px;
+}
+
+/* end dev */
+.row .column,
+.row .columns {
+  border-radius: 3px;
+  border: 1px solid #333333;
+  display: inline-block;
+  margin: 0;
+  float: left;
+  background: lightgray;
+}
+
 * {
   font: 10pt menlo, monospace;
   margin: 0px;
@@ -23,11 +46,11 @@ body {
   background: lightgray;
   margin: 0;
   float: left;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   padding-left: 0px;
-  margin-left: 28px;
-  margin-bottom: 8px;
+  margin-left: 5px;
+  margin-bottom: 5px;
 }
 .row .column .one, .row .column .two, .row .column .three, .row .column .four, .row .column .five, .row .column .six, .row .column .seven, .row .column .eight, .row .column .nine, .row .column .ten, .row .column .eleven, .row .column .twelve,
 .row .columns .one,
@@ -43,12 +66,12 @@ body {
 .row .columns .eleven,
 .row .columns .twelve {
   width: 100%;
-  margin-left: 28px;
-  margin-right: 28px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 .row .column:first-child,
 .row .columns:first-child {
-  margin-left: 14px;
+  margin-left: 2.5px;
 }
 @media (max-width: 600px) {
   .row .column,
@@ -65,51 +88,51 @@ body {
 }
 .row .column.one,
 .row .columns.one {
-  width: calc(((100% / 12) * 1) - 0px * 2 - 28px - (1px * 2));
+  width: calc(((100% / 12) * 1) - 0px * 2 - 5px - (1px * 2));
 }
 .row .column.two,
 .row .columns.two {
-  width: calc(((100% / 12) * 2) - 0px * 2 - 28px - (1px * 2));
+  width: calc(((100% / 12) * 2) - 0px * 2 - 5px - (1px * 2));
 }
 .row .column.three,
 .row .columns.three {
-  width: calc(((100% / 12) * 3) - 0px * 2 - 28px - (1px * 2));
+  width: calc(((100% / 12) * 3) - 0px * 2 - 5px - (1px * 2));
 }
 .row .column.four,
 .row .columns.four {
-  width: calc(((100% / 12) * 4) - 0px * 2 - 28px - (1px * 2));
+  width: calc(((100% / 12) * 4) - 0px * 2 - 5px - (1px * 2));
 }
 .row .column.five,
 .row .columns.five {
-  width: calc(((100% / 12) * 5) - 0px * 2 - 28px - (1px * 2));
+  width: calc(((100% / 12) * 5) - 0px * 2 - 5px - (1px * 2));
 }
 .row .column.six,
 .row .columns.six {
-  width: calc(((100% / 12) * 6) - 0px * 2 - 28px - (1px * 2));
+  width: calc(((100% / 12) * 6) - 0px * 2 - 5px - (1px * 2));
 }
 .row .column.seven,
 .row .columns.seven {
-  width: calc(((100% / 12) * 7) - 0px * 2 - 28px - (1px * 2));
+  width: calc(((100% / 12) * 7) - 0px * 2 - 5px - (1px * 2));
 }
 .row .column.eight,
 .row .columns.eight {
-  width: calc(((100% / 12) * 8) - 0px * 2 - 28px - (1px * 2));
+  width: calc(((100% / 12) * 8) - 0px * 2 - 5px - (1px * 2));
 }
 .row .column.nine,
 .row .columns.nine {
-  width: calc(((100% / 12) * 9) - 0px * 2 - 28px - (1px * 2));
+  width: calc(((100% / 12) * 9) - 0px * 2 - 5px - (1px * 2));
 }
 .row .column.ten,
 .row .columns.ten {
-  width: calc(((100% / 12) * 10) - 0px * 2 - 28px - (1px * 2));
+  width: calc(((100% / 12) * 10) - 0px * 2 - 5px - (1px * 2));
 }
 .row .column.eleven,
 .row .columns.eleven {
-  width: calc(((100% / 12) * 11) - 0px * 2 - 28px - (1px * 2));
+  width: calc(((100% / 12) * 11) - 0px * 2 - 5px - (1px * 2));
 }
 .row .column.twelve,
 .row .columns.twelve {
-  width: calc(((100% / 12) * 12) - 0px * 2 - 28px - (1px * 2));
+  width: calc(((100% / 12) * 12) - 0px * 2 - 5px - (1px * 2));
 }
 
 .row:after {
