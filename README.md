@@ -1,8 +1,7 @@
 #12 Column Grid for Thomas (Desktop & Mobile)
 
 ###About
-I needed a grid system that allows me to instantly change gutter widths and padding on a whim and without any hassle. Even my favorite, [Skeleton](http://getskeleton.com/), doesn't allow me to do this very easily. It can be tricky to make quick ajustments to, and also comes with a lot of stuff I don't always need. Unavoidably, this is a heavier system than I'd like. It's 500 lines. But it is a perfectly customizable grid and should meet the needs of anyone who needs to quickly bootstrap a layout without having to worry about learning the idiosyncracies of a library. `$gutter: npx` is all you need.
-
+I needed a grid system that allows me to instantly change gutter widths and padding on a whim and without any hassle. Even my favorite, Skeleton, doesn't allow me to do this very easily. It can be tricky to make quick ajustments to, and also comes with a lot of stuff I don't always need. Unavoidably, this is a heavier system than I'd like. It's 500 lines. But it is a perfectly customizable grid and should meet the needs of anyone who needs to quickly bootstrap a layout without having to worry about learning the idiosyncracies of a library. $gutter: npx is all you need.
 ###Use
 
 ####Install
