@@ -3,7 +3,7 @@
 $margin-width: 15px;
 $padding-amount-x: 0px;
 $padding-amount-y: 20px;
-$margin-amount-x: 8px;
+$margin-amount-x: 28px;
 $margin-amount-y: 8px;
 $row-width: 80%;
 
@@ -36,16 +36,15 @@ body{
     padding-top: $padding-amount-y;
     padding-bottom: $padding-amount-y;
     padding-left: $padding-amount-x;
-    padding-right: $padding-amount-x;
     margin-left: $margin-amount-x;
-    margin-bottom: $margin-amount-y;
+    margin-bottom: $margin-amount-y; 
   }
   .column,
   .columns{
     .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve{
       width: 100%;
       margin-left: $margin-amount-x;
-      margin-right: $margin-amount-x;
+      margin-right: $margin-amount-x; 
     }
     &:first-child{
       margin-left: $margin-amount-x/2;
@@ -55,7 +54,7 @@ body{
         width: 100% !important;
         margin-left: 0;
         margin-right: 0;
-      &:first-child{
+      &:first-child{ 
         margin-left: 0;
       }        
     } 
@@ -104,3 +103,24 @@ body{
     display: block;
   }
 }
+
+$base-width-one: 50;
+
+
+.row-of-twelve{
+  div.coloumn{
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
