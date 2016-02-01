@@ -499,5 +499,3 @@ body {
 .row.row-of-twelve div.column.twelve, .row.row-of-twelve div.columns.twelve {
   width: calc(100% - 0px * 2 - 5px - 1px * 2 + 5px / 12);
 }
-
-/* new way */

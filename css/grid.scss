@@ -17,18 +17,18 @@ $base-width-keys: (
   base-width-twelve
 );
 $base-width-vals: (
-  ((100% / 12) * 1) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2),
-  ((100% / 12) * 2) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2),
-  ((100% / 12) * 3) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2),
-  ((100% / 12) * 4) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2),
-  ((100% / 12) * 5) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2),
-  ((100% / 12) * 6) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2),
-  ((100% / 12) * 7) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2),
-  ((100% / 12) * 8) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2),
-  ((100% / 12) * 9) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2),
-  ((100% / 12) * 10) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2),
-  ((100% / 12) * 11) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2),
-  ((100% / 12) * 12) - #{$padding-amount-x} * 2 - #{$margin-amount-x} - (#{$border-width-x} * 2)
+  ((100% / 12) * 1) - #{$padding-amount-x} * 2 - #{$gutter} - (#{$border-width-x} * 2),
+  ((100% / 12) * 2) - #{$padding-amount-x} * 2 - #{$gutter} - (#{$border-width-x} * 2),
+  ((100% / 12) * 3) - #{$padding-amount-x} * 2 - #{$gutter} - (#{$border-width-x} * 2),
+  ((100% / 12) * 4) - #{$padding-amount-x} * 2 - #{$gutter} - (#{$border-width-x} * 2),
+  ((100% / 12) * 5) - #{$padding-amount-x} * 2 - #{$gutter} - (#{$border-width-x} * 2),
+  ((100% / 12) * 6) - #{$padding-amount-x} * 2 - #{$gutter} - (#{$border-width-x} * 2),
+  ((100% / 12) * 7) - #{$padding-amount-x} * 2 - #{$gutter} - (#{$border-width-x} * 2),
+  ((100% / 12) * 8) - #{$padding-amount-x} * 2 - #{$gutter} - (#{$border-width-x} * 2),
+  ((100% / 12) * 9) - #{$padding-amount-x} * 2 - #{$gutter} - (#{$border-width-x} * 2),
+  ((100% / 12) * 10) - #{$padding-amount-x} * 2 - #{$gutter} - (#{$border-width-x} * 2),
+  ((100% / 12) * 11) - #{$padding-amount-x} * 2 - #{$gutter} - (#{$border-width-x} * 2),
+  ((100% / 12) * 12) - #{$padding-amount-x} * 2 - #{$gutter} - (#{$border-width-x} * 2)
 );
 
 .row{
@@ -39,15 +39,15 @@ $base-width-vals: (
   .columns{
     text-align: center;
     padding: $padding-amount-y $padding-amount-x;
-    margin-left: $margin-amount-x;
+    margin-left: $gutter;
     margin-bottom: $margin-amount-y;
   }
   .column,
   .columns{
     .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve{ 
       width: 100%;
-      margin-left: $margin-amount-x;
-      margin-right: $margin-amount-x;
+      margin-left: $gutter;
+      margin-right: $gutter;
     }
     &:first-child{
       margin-left: 0;
@@ -70,7 +70,7 @@ $base-width-vals: (
         div.column, div.columns{
           $col-index: index($columns, $column);
           &.#{$column}{
-            width: calc(#{nth($base-width-vals, $col-index)} + #{$margin-amount-x} / #{$width-index});
+            width: calc(#{nth($base-width-vals, $col-index)} + #{$gutter} / #{$width-index});
           }                      
         }
       }
@@ -79,7 +79,15 @@ $base-width-vals: (
 
 }
 
-/* new way */
+
+
+
+
+
+
+
+
+
 
 
 

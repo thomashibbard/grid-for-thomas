@@ -12,13 +12,13 @@ body{
 
 $padding-amount-x: 0px;
 $padding-amount-y: 8px;
-$margin-amount-x: 5px;
+$gutter: 5px;
 $margin-amount-y: 5px;
 $border-width-x: 1px;
 $row-width: 80%;
 
 .row{
-	.column,
+	.column, 
 	.columns{
 		border-radius: 3px;
     border: $border-width-x solid #333333;
