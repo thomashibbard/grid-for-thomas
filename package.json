@@ -23,12 +23,8 @@
     "gulp-rename": "^1.2.2",
     "gulp-ruby-sass": "^2.0.6"
   },
-<<<<<<< HEAD
   "dependencies": {
     "gulp-cssmin": "^0.1.7",
     "gulp-rename": "^1.2.2"
   }
-=======
-  "dependencies": {}
->>>>>>> add-row-class
 }
