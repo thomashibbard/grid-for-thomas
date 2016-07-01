@@ -8,6 +8,7 @@ I needed a grid system that allows me to instantly change gutter widths and padd
 ####Install
  - `bower install grid-for-thomas --save-dev`
  - add syle link to HTML file `  <link rel="stylesheet" href="./css/grid.css" />`
+
 ####Edit and Mark Up
 Adjust the padding and margin in the `grid.scss` file using `$padding-amount-x/y` and `$margin-amount-x/y`. 
 
